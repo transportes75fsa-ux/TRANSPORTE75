@@ -1,0 +1,85 @@
+# Transportes75 — robots.txt
+# Foco: SEO tradicional + GEO/AEO (citações em ChatGPT, Claude, Perplexity, Copilot, Gemini)
+
+User-agent: *
+Allow: /
+Disallow: /*?q=
+Disallow: /*?search_term_string
+
+# Bots maliciosos / scrapers
+User-agent: libredtail-http
+Disallow: /
+
+User-agent: GenomeCrawlerd
+Disallow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /img/
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing / Copilot
+User-agent: Bingbot
+Allow: /
+
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Common Crawl
+User-agent: CCBot
+Allow: /
+
+# Cohere, Apple, Meta, DuckDuckGo, You.com
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Sitemap
+Sitemap: https://transportes75.com.br/sitemap.xml
