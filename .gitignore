@@ -9,5 +9,7 @@ node_modules/
 .env.local
 *.bak
 *.tmp
+# arquivos de teste temporarios do gerador
+teste-*.html
 .vscode/
 .idea/

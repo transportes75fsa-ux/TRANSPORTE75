@@ -13,8 +13,8 @@ Tudo na pasta /var/www/transportes75/ na VPS Contabo.
 # IDENTIDADE
 # ============================================================
 SITE_NOME = "Transportes75"
-SITE_TAGLINE = "Transporte de Veículos — Grupo Desmonte75"
-SITE_DESC_CURTA = "Transporte de veículos especializado em todo o Nordeste — cegonheira, sinistrados, leilão. Empresa do Grupo Desmonte75."
+SITE_TAGLINE = "Transporte de Veículos Bahia ↔ São Paulo"
+SITE_DESC_CURTA = "Transporte de veículos na rota Bahia ↔ São Paulo. Cegonha, sinistrados, leilão e particular. Frota rastreada na BR-116."
 
 # ============================================================
 # DOMÍNIO E URLS (TROCAR depois do registro)
@@ -24,19 +24,19 @@ URL_BASE = f"https://{DOMINIO}"
 URL_BASE_SLASH = f"{URL_BASE}/"
 
 # ============================================================
-# CONTATO (TROCAR se for número diferente)
+# CONTATO
 # ============================================================
-WHATSAPP_NUMERO = "557599960075"          # mesmo número Desmonte75 por enquanto
-TELEFONE_EXIBIR = "(75) 9996-0075"
+WHATSAPP_NUMERO = "5575992852199"          # WhatsApp oficial Transportes75
+TELEFONE_EXIBIR = "(75) 99285-2199"
 WA_URL = f"https://wa.me/{WHATSAPP_NUMERO}"
 EMAIL = "contato@transportes75.com.br"    # ← AJUSTAR
 
 # ============================================================
 # EMPRESA
 # ============================================================
-CNPJ = "65.499.243/0001-61"               # ← AJUSTAR se for CNPJ separado
-RAZAO_SOCIAL = "Transportes75 — Grupo Desmonte75"
-ANO_FUNDACAO = "2018"
+CNPJ = "65.499.243/0001-61"               # CNPJ do grupo
+RAZAO_SOCIAL = "Transportes75"
+ANO_FUNDACAO = "2026"                      # ← AJUSTAR se necessário
 
 # Endereço
 ENDERECO_RUA = "Rua Professor Fernando São Paulo, 944"
@@ -49,28 +49,37 @@ LAT = -12.2739
 LON = -38.9618
 
 # ============================================================
-# ÁREA DE ATENDIMENTO
+# ÁREA DE ATENDIMENTO — Rota BA ↔ SP
 # ============================================================
-ESTADOS_ATENDIDOS = ["Bahia", "Sergipe", "Pernambuco", "Alagoas", "Paraíba", "Rio Grande do Norte"]
-CIDADES_PRINCIPAIS = ["Salvador", "Aracaju", "Recife", "Maceió", "João Pessoa", "Natal", "Feira de Santana", "Vitória da Conquista"]
+ESTADOS_ATENDIDOS = ["Bahia", "Minas Gerais", "São Paulo"]   # rota e passagem
+CIDADES_PRINCIPAIS = [
+    "Salvador", "Feira de Santana", "Vitória da Conquista", "Jequié",   # BA
+    "Belo Horizonte", "Governador Valadares", "Montes Claros",            # MG (passagem)
+    "São Paulo", "Campinas", "São José dos Campos", "Ribeirão Preto"     # SP
+]
+ROTA_PRINCIPAL = "Bahia ↔ São Paulo"
+RODOVIA_PRINCIPAL = "BR-116 (Rio-Bahia)"
+DISTANCIA_KM_APROX = 2000   # Salvador → São Paulo
 
 # ============================================================
-# CORES E BRANDING (paleta inicial = mesma Desmonte75)
+# CORES E BRANDING — paleta LARANJA + CINZA (Transportes75)
 # ============================================================
-COR_PRIMARIA = "#3498db"           # azul
-COR_PRIMARIA_2 = "#5dade2"
-COR_DESTAQUE = "#3db870"           # verde
-COR_FUNDO = "#0e0e0e"              # quase preto
-COR_TEXTO = "#e5e2e1"
+COR_PRIMARIA = "#f97316"           # laranja vibrante (orange-500)
+COR_PRIMARIA_2 = "#fb923c"         # laranja claro (orange-400)
+COR_DESTAQUE = "#3db870"           # verde mantido (combina com laranja)
+COR_FUNDO = "#1f2937"              # cinza escuro (gray-800)
+COR_FUNDO_2 = "#374151"            # cinza médio (gray-700) — cards
+COR_FUNDO_3 = "#4b5563"            # cinza claro (gray-600) — accents
+COR_TEXTO = "#e5e7eb"              # cinza muito claro (gray-200) — texto
 LOGO_PATH = "/logomarca_redonda.webp"   # ← trocar quando tiver logo Transportes75
 
 # ============================================================
-# AUTOR (mesmo padrão Desmonte75)
+# AUTOR
 # ============================================================
-AUTOR_NOME = "Luciano Cortes Sales"
-AUTOR_CARGO = "Fundador · Transportes75 — Feira de Santana, BA"
-AUTOR_BIO = "Apaixonado por veículos desde os 12 anos, Luciano tem mais de 23 anos de experiência em desmanche certificado e mais de 42 anos em recuperação automotiva. Fundador do Grupo Desmonte75, agora expandindo para transporte de veículos com a Transportes75."
-AUTOR_FOTO = "/img/luciano-cortes-sales-desmonte75.webp"
+AUTOR_NOME = "Sergio Torres"
+AUTOR_CARGO = "Especialista · Transportes75 — Feira de Santana, BA"
+AUTOR_BIO = "40 anos de experiência no setor de transporte de pessoas e cargas. Especialista em logística rodoviária, operações de cegonha e transporte de veículos na rota Bahia ↔ São Paulo. Sergio é responsável pela operação técnica e estratégica da Transportes75."
+AUTOR_FOTO = "/img/sergio-torres-transportes75.webp"
 
 # ============================================================
 # REDES SOCIAIS (opcional)
@@ -86,8 +95,8 @@ LINKEDIN = ""
 SERVICOS = [
     {
         "slug": "cegonha",
-        "titulo": "Cegonheira",
-        "desc": "Transporte de veículos novos para concessionárias e revendas em todo o Nordeste."
+        "titulo": "Cegonha",
+        "desc": "Transporte de veículos novos e seminovos para concessionárias, revendas e clientes finais."
     },
     {
         "slug": "sinistrados",

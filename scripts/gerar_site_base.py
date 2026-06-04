@@ -42,29 +42,27 @@ def js(s):
 # COMPONENTES COMUNS
 # ============================================================
 NAV = f'''<nav class="glass-nav fixed top-0 w-full z-50 flex justify-between items-center px-8 py-3">
-  <a href="/" class="font-bold text-xl tracking-tight text-white" style="font-family:Manrope,sans-serif;">TRANSPORTES<span style="color:{C.COR_PRIMARIA};">75</span></a>
+  <a href="/index.html" class="font-bold text-xl tracking-tight text-white" style="font-family:Manrope,sans-serif;">TRANSPORTES<span style="color:{C.COR_PRIMARIA};">75</span></a>
   <div class="hidden md:flex items-center gap-8">
-    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/">Home</a>
-    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/servicos">Serviços</a>
-    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/sobre-nos">Sobre Nós</a>
-    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/blog">Blog</a>
-    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/contato">Contato</a>
+    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/index.html">Home</a>
+    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/index.html#rota">Serviços</a>
+    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/sobre-nos.html">Sobre Nós</a>
+    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/blog.html">Blog</a>
+    <a class="text-white/60 hover:text-white text-sm uppercase tracking-wide transition-colors" style="font-family:Manrope,sans-serif;" href="/contato.html">Contato</a>
   </div>
-  <a href="{C.WA_URL}" target="_blank" class="text-xs tracking-widest uppercase text-[{C.COR_PRIMARIA}] hover:text-white transition-colors" style="font-family:Manrope,sans-serif;">WhatsApp →</a>
+  <a href="{C.WA_URL}" target="_blank" style="font-family:Manrope,sans-serif;display:inline-flex;align-items:center;gap:0.5rem;background:#25D366;color:#fff;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.6rem 1.2rem;border-radius:6px;text-decoration:none;transition:background 0.2s;" onmouseover="this.style.background='#128C7E'" onmouseout="this.style.background='#25D366'">📱 WhatsApp</a>
 </nav>'''
 
 FOOTER = f'''<footer style="background:#050505;border-top:1px solid #2c3e50;" class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full">
   <div class="flex flex-col gap-4 mb-8 md:mb-0 items-center md:items-start">
-    <div style="width:100px;height:100px;border-radius:50%;overflow:hidden;">
-      <img loading="lazy" alt="Transportes75 Logo" style="width:100%;height:100%;object-fit:cover;transform:scale(1.06);" src="{C.LOGO_PATH}"/>
-    </div>
-    <p style="color:rgba(229,226,225,0.4);font-family:Inter,sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;">© 2026 TRANSPORTES75 · GRUPO DESMONTE75 · CNPJ {C.CNPJ}</p>
-    <p style="color:rgba(229,226,225,0.3);font-family:Inter,sans-serif;font-size:10px;letter-spacing:1px;">Empresa do <a href="https://desmonte75.com.br" style="color:{C.COR_PRIMARIA};text-decoration:none;">Grupo Desmonte75</a></p>
+    <img loading="lazy" alt="Transportes75 — Logomarca" src="/img/logo/logo-transportes75-256.png" width="90" height="90" style="width:90px;height:90px;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.4));"/>
+    <p style="color:rgba(229,226,225,0.4);font-family:Inter,sans-serif;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;">© 2026 TRANSPORTES75 · CNPJ {C.CNPJ}</p>
+    <p style="color:rgba(229,226,225,0.3);font-family:Inter,sans-serif;font-size:10px;letter-spacing:1px;">Transporte de Veículos · Rota Bahia ↔ São Paulo</p>
   </div>
   <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;">
-    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/politica-sustentabilidade">Sustentabilidade</a>
-    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/termos-de-uso">Termos de Uso</a>
-    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/politica-privacidade">Privacidade</a>
+    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/politica-sustentabilidade.html">Sustentabilidade</a>
+    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/termos-de-uso.html">Termos de Uso</a>
+    <a style="font-family:Inter,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:rgba(229,226,225,0.4);text-decoration:none;" href="/politica-privacidade.html">Privacidade</a>
   </div>
 </footer>'''
 
@@ -78,7 +76,12 @@ body{{background:var(--dark);color:var(--light);font-family:'Inter',sans-serif;f
 .article-meta{{display:flex;align-items:center;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap;}}
 .meta-tag{{font-family:'Manrope',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--green);background:rgba(61,184,112,0.08);padding:0.3rem 0.8rem;border:1px solid rgba(61,184,112,0.25);}}
 .meta-date{{font-size:0.8rem;color:var(--muted);letter-spacing:0.08em;}}
-.article-hero h1{{font-family:'Manrope',sans-serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:800;text-transform:uppercase;line-height:1.05;letter-spacing:-0.02em;color:var(--light);max-width:22ch;margin-bottom:1.5rem;}}
+.article-hero h1{{font-family:'Manrope',sans-serif;font-size:clamp(2.4rem,5vw,4.5rem);font-weight:800;text-transform:uppercase;line-height:1.15;letter-spacing:-0.02em;color:var(--light);max-width:22ch;margin:0 0 1.5rem 0;padding-top:0.3em;overflow:visible;}}
+.article-hero{{overflow:visible !important;}}
+.article-hero-grid{{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center;max-width:1200px;margin:0 auto;}}
+.article-hero-img{{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.4);}}
+.article-hero-img img{{width:100%;height:auto;display:block;}}
+@media(max-width:900px){{.article-hero-grid{{grid-template-columns:1fr;gap:2rem;}}}}
 .article-hero h1 em{{font-style:normal;color:var(--pr);}}
 .article-lead{{font-size:1.1rem;color:rgba(229,226,225,0.65);max-width:60ch;line-height:1.85;border-left:3px solid var(--pr);padding-left:1.5rem;}}
 .article-layout{{display:grid;grid-template-columns:1fr 280px;gap:5rem;padding:5rem 6vw;max-width:1200px;margin:0 auto;width:100%;}}
@@ -100,9 +103,10 @@ body{{background:var(--dark);color:var(--light);font-family:'Inter',sans-serif;f
 .sidebar-title{{font-family:'Manrope',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--pr);margin-bottom:1rem;}}
 .toc-link{{display:block;font-size:0.83rem;color:var(--muted);text-decoration:none;padding:0.4rem 0;border-bottom:1px solid rgba(44,62,80,0.5);}}
 .toc-link:hover{{color:var(--pr);}}
-.sidebar-cta{{background:var(--pr);padding:1.5rem;text-align:center;}}
+.sidebar-cta{{background:#25D366;padding:1.5rem;text-align:center;}}
 .sidebar-cta p{{font-size:0.9rem;color:#fff;margin-bottom:1rem;}}
-.sidebar-cta a{{display:flex;align-items:center;justify-content:center;gap:0.5rem;background:var(--dark);color:var(--light);font-family:'Manrope',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.9rem;text-decoration:none;}}
+.sidebar-cta a{{display:flex;align-items:center;justify-content:center;gap:0.5rem;background:#128C7E;color:#fff;font-family:'Manrope',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:0.9rem;text-decoration:none;transition:background 0.2s;}}
+.sidebar-cta a:hover{{background:#0d6b5e;}}
 .author-box{{display:flex;align-items:center;gap:1.5rem;padding:2rem;background:var(--dark3);border:1px solid var(--border);margin-top:4rem;}}
 .author-name{{font-family:'Manrope',sans-serif;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--light);margin-bottom:0.3rem;}}
 .author-bio{{font-size:0.83rem;color:var(--muted);line-height:1.6;}}
@@ -156,7 +160,7 @@ def bc_schema(crumbs):
 
 
 # ============================================================
-# AUTHOR BOX (padronizado idêntico ao Desmonte75)
+# AUTHOR BOX
 # ============================================================
 AUTHOR_BOX = f'''<div class="author-box">
   <img src="{C.AUTOR_FOTO}" alt="{C.AUTOR_NOME}" style="width:90px;height:90px;object-fit:cover;border-radius:50%;flex-shrink:0;" onerror="this.style.display='none'"/>
@@ -212,6 +216,8 @@ def render_page(slug, title, desc, h1, lead, resposta_rapida, body_html, faqs, t
 <meta property="og:url" content="{canonical}"/>
 <meta property="og:locale" content="pt_BR"/>
 <meta property="og:image" content="{C.URL_BASE}{C.LOGO_PATH}"/>
+<link rel="icon" type="image/png" href="/img/logo/favicon.png"/>
+<link rel="apple-touch-icon" href="/img/logo/apple-touch-icon.png"/>
 <link rel="stylesheet" href="/dist/styles.css"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -223,12 +229,19 @@ def render_page(slug, title, desc, h1, lead, resposta_rapida, body_html, faqs, t
 <body>
 {NAV}
 <header class="article-hero" style="margin-top:60px;">
-  <div class="article-meta">
-    <span class="meta-tag">{C.SITE_NOME}</span>
-    <span class="meta-date">02 JUN, 2026</span>
+  <div class="article-hero-grid">
+    <div>
+      <div class="article-meta">
+        <span class="meta-tag">{C.SITE_NOME}</span>
+        <span class="meta-date">02 JUN, 2026</span>
+      </div>
+      <h1>{h1}</h1>
+      <p class="article-lead">{lead}</p>
+    </div>
+    <div class="article-hero-img">
+      <img src="/img/equipe/cegonha-transportes75.webp" alt="Cegonha Transportes75 carregada de veiculos na rota Bahia BA SP" loading="lazy" width="888" height="581"/>
+    </div>
   </div>
-  <h1>{h1}</h1>
-  <p class="article-lead">{lead}</p>
 </header>
 <div class="article-layout">
   <article class="article-body">
@@ -271,82 +284,187 @@ def render_page(slug, title, desc, h1, lead, resposta_rapida, body_html, faqs, t
 # ============================================================
 PAGES = {}
 
-# ---------- INDEX (Home) ----------
-PAGES["index.html"] = render_page(
-    slug="",
-    title=f"{C.SITE_NOME} — Transporte de Veículos no Nordeste",
-    desc=C.SITE_DESC_CURTA,
-    h1=f"<em>{C.SITE_NOME}</em><br>Transporte de Veículos no Nordeste",
-    lead=f"Empresa do Grupo Desmonte75 especializada em transporte de veículos no Nordeste. Cegonheira, sinistrados, leilão e particular. Atendemos {', '.join(C.ESTADOS_ATENDIDOS[:4])} e mais.",
-    resposta_rapida=f"A {C.SITE_NOME} é especializada em transporte de veículos no Nordeste — cegonheira, veículos sinistrados, retirada de leilão e particular. Atendemos Bahia, Sergipe, Pernambuco, Alagoas, Paraíba e Rio Grande do Norte com frota rastreada e nota fiscal. Empresa do Grupo Desmonte75 (CNPJ {C.CNPJ}). WhatsApp {C.TELEFONE_EXIBIR}.",
-    body_html=f'''<h2 id="servicos">Nossos Serviços</h2>
-<ul>
-{chr(10).join([f'<li><strong>{s["titulo"]}:</strong> {s["desc"]}</li>' for s in C.SERVICOS])}
-</ul>
+# ---------- INDEX (Home) — hero customizado com foto + logo ----------
+def render_home():
+    canonical = C.URL_BASE_SLASH
+    title = f"{C.SITE_NOME} — Transporte de Veículos Bahia ↔ São Paulo"
+    desc = C.SITE_DESC_CURTA
+    keywords = "transporte de veículos bahia são paulo, transporte de veículos são paulo bahia, cegonha ba sp, cegonha sp ba, transportar carro salvador são paulo"
 
-<h2 id="cobertura">Cobertura Nordeste</h2>
-<p>Atendemos as principais capitais e cidades do Nordeste:</p>
-<ul>
-{chr(10).join([f'<li>{c}</li>' for c in C.CIDADES_PRINCIPAIS])}
-</ul>
-
-<h2 id="por-que-escolher">Por Que Escolher a {C.SITE_NOME}</h2>
-<ul>
-  <li><strong>Frota própria</strong> com cegonheiras e guinchos rastreados</li>
-  <li><strong>Nota fiscal eletrônica</strong> em todos os transportes</li>
-  <li><strong>Seguro de carga</strong> incluso</li>
-  <li><strong>Grupo Desmonte75</strong> — mais de 6 anos no setor automotivo da Bahia</li>
-  <li><strong>Hub estratégico</strong> em Feira de Santana, principal entroncamento do Nordeste</li>
-</ul>''',
-    faqs=[
+    faqs = [
         ("Quais veículos vocês transportam?", "Carros de passeio, SUVs, picapes, utilitários leves e veículos sinistrados. Para cargas pesadas (caminhões, ônibus), consulte cotação específica."),
-        ("Vocês atendem fora da Bahia?", "Sim, atendemos Bahia, Sergipe, Pernambuco, Alagoas, Paraíba e Rio Grande do Norte. Para outros estados, consulte disponibilidade."),
-        ("O transporte tem seguro?", "Sim, todos os transportes têm seguro de carga incluso. Em caso de sinistro, o cliente é integralmente ressarcido."),
-        ("Como solicito um orçamento?", f"Pelo WhatsApp {C.TELEFONE_EXIBIR}. Informe origem, destino, modelo do veículo e prazo desejado."),
-        ("Vocês emitem nota fiscal?", f"Sim. Nota fiscal eletrônica em todos os transportes, emitida pelo CNPJ {C.CNPJ}."),
-    ],
-    toc=[("Nossos Serviços", "#servicos"), ("Cobertura", "#cobertura"), ("Por que escolher", "#por-que-escolher"), ("Para IAs e Voz", "#bloco-ia"), ("FAQ", "#faq")],
-    keywords=f"transporte de veículos nordeste, cegonheira bahia, transporte de carros, {C.SITE_NOME}, leilão veículos transporte"
-)
+        ("A rota é só Bahia ↔ São Paulo?", "Sim, nossa especialização é a rota Bahia ↔ São Paulo pela BR-116. Atendemos cidades de origem e destino em ambos os estados, além de Minas Gerais (passagem)."),
+        ("Qual o prazo médio de transporte BA → SP?", "O trajeto Salvador ↔ São Paulo leva em média 3 a 4 dias úteis. Confirmamos prazo exato na cotação."),
+        ("Como solicito um orçamento?", f"Pelo WhatsApp {C.TELEFONE_EXIBIR}. Informe origem (cidade BA), destino (cidade SP), modelo do veículo e prazo desejado."),
+    ]
+
+    faq_items = ",".join([f'{{"@type":"Question","name":{js(q)},"acceptedAnswer":{{"@type":"Answer","text":{js(a)}}}}}' for q,a in faqs])
+    faq_schema_block = f'<script type="application/ld+json">\n{{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_items}]}}\n</script>'
+
+    bc_items = ",".join([f'{{"@type":"ListItem","position":{i+1},"name":{js(n)},"item":{js(u)}}}' for i,(n,u) in enumerate([("Home", C.URL_BASE_SLASH)])])
+    bc_block = f'<script type="application/ld+json">\n{{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{bc_items}]}}\n</script>'
+
+    resposta_rapida = f"A {C.SITE_NOME} é especializada em transporte de veículos na rota Bahia ↔ São Paulo. Cegonha, sinistrados, leilão e particular. WhatsApp {C.TELEFONE_EXIBIR}."
+    faq_html = "".join([f'<div class="faq-item"><div class="faq-q">{q}</div><p class="faq-a">{a}</p></div>\n' for q,a in faqs])
+
+    return f'''<!DOCTYPE html>
+<html class="dark" lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>{title}</title>
+<meta name="description" content="{desc}"/>
+<meta name="keywords" content="{keywords}"/>
+<link rel="canonical" href="{canonical}"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="{title}"/>
+<meta property="og:description" content="{desc}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{canonical}"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:image" content="{C.URL_BASE}/img/hero/hero-transporte-veiculos-bahia-sao-paulo.webp"/>
+<link rel="icon" type="image/png" href="/img/logo/favicon.png"/>
+<link rel="apple-touch-icon" href="/img/logo/apple-touch-icon.png"/>
+<link rel="stylesheet" href="/dist/styles.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="image" href="/img/hero/hero-transporte-veiculos-bahia-sao-paulo.webp"/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"/></noscript>
+<script type="application/ld+json">
+{org_schema()}
+</script>
+{faq_schema_block}
+{bc_block}
+<script type="application/ld+json">
+{speakable_schema()}
+</script>
+<style>{CSS_INLINE}
+header.home-hero{{position:relative !important;min-height:80vh !important;padding:10rem 6vw 5rem !important;background-image:linear-gradient(rgba(15,20,30,0.55),rgba(15,20,30,0.85)),url('/img/hero/hero-transporte-veiculos-bahia-sao-paulo.webp') !important;background-size:cover !important;background-position:center !important;background-repeat:no-repeat !important;border-bottom:2px solid var(--pr);overflow:visible !important;}}
+.home-hero-content{{position:relative;z-index:2;max-width:1200px;margin:0 auto;width:100%;}}
+.home-hero h1{{font-family:'Manrope',sans-serif;font-size:clamp(2.4rem,6vw,5rem);font-weight:800;text-transform:uppercase;line-height:1.15;letter-spacing:-0.02em;color:#fff;margin:0 0 1.5rem 0;padding-top:0.3em;text-shadow:0 4px 24px rgba(0,0,0,0.5);overflow:visible;}}
+.home-hero h1 em{{font-style:normal;color:var(--pr);}}
+.home-hero-sub{{font-size:clamp(1.05rem,1.5vw,1.3rem);color:rgba(255,255,255,0.9);max-width:65ch;line-height:1.7;margin-bottom:2.5rem;text-shadow:0 2px 12px rgba(0,0,0,0.5);}}
+.home-hero-badges{{display:flex;gap:0.8rem;margin-bottom:2rem;flex-wrap:wrap;}}
+.home-hero-badges .b{{display:inline-flex;align-items:center;gap:0.4rem;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:0.45rem 0.9rem;font-size:0.78rem;font-weight:500;border-radius:999px;}}
+.home-hero-cta{{display:inline-flex;align-items:center;gap:0.6rem;background:#25D366;color:#fff;font-family:'Manrope',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;padding:1.1rem 2.2rem;border-radius:8px;text-decoration:none;box-shadow:0 8px 30px rgba(37,211,102,0.4);transition:background 0.2s,transform 0.2s;}}
+.home-hero-cta:hover{{background:#128C7E;transform:translateY(-2px);}}
+.home-hero-logo{{position:absolute;top:2.5rem;left:6vw;width:234px;height:234px;z-index:3;filter:drop-shadow(0 8px 24px rgba(0,0,0,0.5));}}
+</style>
+</head>
+<body>
+{NAV}
+
+<header class="home-hero" style="margin-top:60px;">
+  <img src="/img/logo/logo-transportes75-256.png" alt="Transportes75 — Logomarca" class="home-hero-logo" width="234" height="234"/>
+  <div style="display:block;width:100%;height:220px;margin:0;padding:0;line-height:0;font-size:0;">&nbsp;</div>
+  <div class="home-hero-content">
+    <div class="home-hero-badges">
+      <span class="b">🚚 Cegonha BA ↔ SP</span>
+      <span class="b">📍 Frota Rastreada</span>
+      <span class="b">🛣️ BR-116</span>
+    </div>
+    <h1>Transporte de Veículos<br><em>Bahia ↔ São Paulo</em></h1>
+    <p class="home-hero-sub">Cegonha especializada na rota <strong>Bahia → São Paulo</strong> e <strong>São Paulo → Bahia</strong>. Frota rastreada na BR-116 ao longo dos 2.000 km.</p>
+    <a href="{C.WA_URL}" target="_blank" class="home-hero-cta">📱 Solicitar Orçamento</a>
+  </div>
+</header>
+
+<div class="article-layout">
+  <article class="article-body">
+    <div id="resposta-rapida" style="background:{C.COR_FUNDO_2};border-left:4px solid {C.COR_PRIMARIA};padding:1.2rem 1.5rem;margin-bottom:2.5rem;border-radius:0 4px 4px 0;">
+      <p style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:{C.COR_PRIMARIA};margin-bottom:0.5rem;">Resumo</p>
+      <p style="color:{C.COR_TEXTO};line-height:1.7;margin:0;font-size:0.97rem;">{resposta_rapida}</p>
+    </div>
+
+    <h2 id="rota">Rota Principal: Transporte de Veículos Bahia ↔ São Paulo</h2>
+    <p>A <strong>Transportes75</strong> opera com foco na rota bidirecional <strong>Bahia → São Paulo</strong> e <strong>São Paulo → Bahia</strong>, um dos corredores rodoviários mais movimentados do Brasil. Percorremos cerca de 2.000 km pela BR-116 em ambos os sentidos, com agilidade e rastreamento em tempo real.</p>
+
+    <h2 id="cegonha-ba-sp">Cegonha Bahia ↔ São Paulo: Como Funciona</h2>
+    <p><strong>Cegonha BA ↔ SP</strong> é o transporte de veículos em caminhão-cegonha, com capacidade de até 10 carros por viagem. Atendemos concessionárias, revendas, seguradoras, leiloeiros e clientes finais.</p>
+
+    <h2 id="sinistrados">Transporte de Veículos Sinistrados BA ↔ SP</h2>
+    <p>Atendemos <strong>seguradoras</strong> com remoção e <strong>transporte de veículos sinistrados</strong> na rota Bahia ↔ São Paulo.</p>
+
+    <h2 id="leilao">Transporte de Carros de Leilão na Rota Bahia ↔ SP</h2>
+    <p>Especializados em <strong>transporte de carro de leilão</strong> — retiramos veículos arrematados em ambos os estados.</p>
+
+    <h2 id="particular">Transporte Particular Salvador ↔ São Paulo</h2>
+    <p>Clientes finais que precisam <strong>transportar carro de Salvador para São Paulo</strong> ou vice-versa.</p>
+
+    <h2 id="por-que-escolher">Por Que Escolher a Transportes75</h2>
+    <ul>
+      <li><strong>Especialização na rota BA ↔ SP</strong> — conhecemos cada trecho da BR-116</li>
+      <li><strong>Frota rastreada</strong> em tempo real</li>
+      <li><strong>Equipe experiente</strong> liderada por Sergio Torres, com 40 anos no setor de transporte</li>
+      <li><strong>Atendimento personalizado</strong> via WhatsApp com cotação em minutos</li>
+    </ul>
+
+    <div style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+      <h2>Em Resumo</h2>
+      <p>{resposta_rapida}</p>
+    </div>
+
+    <h2 id="faq">Perguntas Frequentes</h2>
+    {faq_html}
+
+    {AUTHOR_BOX}
+  </article>
+
+  <aside class="sidebar">
+    <div class="sidebar-box">
+      <div class="sidebar-title">Neste artigo</div>
+      <a href="#rota" class="toc-link">Rota BA ↔ SP</a>
+      <a href="#cegonha-ba-sp" class="toc-link">Cegonha BA ↔ SP</a>
+      <a href="#sinistrados" class="toc-link">Veículos Sinistrados</a>
+      <a href="#leilao" class="toc-link">Carros de Leilão</a>
+      <a href="#particular" class="toc-link">Particular</a>
+      <a href="#por-que-escolher" class="toc-link">Por que escolher</a>
+      <a href="#faq" class="toc-link">FAQ</a>
+    </div>
+    <div class="sidebar-cta">
+      <p>Precisa transportar veículo? Fale com a {C.SITE_NOME}.</p>
+      <a href="{C.WA_URL}" target="_blank">WhatsApp →</a>
+    </div>
+  </aside>
+</div>
+{FOOTER}
+</body></html>'''
+
+PAGES["index.html"] = render_home()
 
 # ---------- SOBRE NÓS ----------
 PAGES["sobre-nos.html"] = render_page(
     slug="sobre-nos",
-    title=f"Sobre Nós — {C.SITE_NOME} | Grupo Desmonte75",
-    desc=f"Conheça a {C.SITE_NOME}, empresa do Grupo Desmonte75 especializada em transporte de veículos no Nordeste. Cegonheira, sinistrados, leilão e particular.",
+    title=f"Sobre Nós — {C.SITE_NOME} ",
+    desc=f"Conheça a {C.SITE_NOME}, especializada em transporte de veículos na rota Bahia ↔ São Paulo. Cegonha, sinistrados, leilão e particular. Liderança técnica de Sergio Torres.",
     h1=f"Sobre a <em>{C.SITE_NOME}</em>",
-    lead=f"A {C.SITE_NOME} nasceu da experiência da Desmonte75, com mais de 6 anos no mercado automotivo da Bahia. Especializada em transporte de veículos no Nordeste, com frota rastreada e nota fiscal.",
-    resposta_rapida=f"A {C.SITE_NOME} é a divisão de transporte do Grupo Desmonte75, especializada em cegonheira, transporte de veículos sinistrados, retirada de leilão e transporte particular. Operamos a partir de Feira de Santana–BA atendendo todo o Nordeste. CNPJ {C.CNPJ}.",
+    lead=f"A {C.SITE_NOME} é uma transportadora especializada na rota Bahia ↔ São Paulo, sob liderança técnica de Sergio Torres, com 40 anos no setor de transporte de pessoas e cargas.",
+    resposta_rapida=f"A {C.SITE_NOME} é especializada em cegonha, transporte de veículos sinistrados, retirada de leilão e transporte particular na rota Bahia ↔ São Paulo. Sede em Feira de Santana–BA. CNPJ {C.CNPJ}.",
     body_html=f'''<h2 id="quem-somos">Quem Somos</h2>
-<p>A <strong>{C.SITE_NOME}</strong> é a empresa de transporte do Grupo Desmonte75, com sede em {C.ENDERECO_CIDADE}, {C.ENDERECO_ESTADO}.</p>
-<p>Operamos desde {C.ANO_FUNDACAO} no setor automotivo da Bahia. Com a expansão das demandas de transporte (cegonheira, veículos sinistrados, retirada de leilão), criamos a {C.SITE_NOME} para atender oficinas, seguradoras, concessionárias e clientes particulares.</p>
+<p>A <strong>{C.SITE_NOME}</strong> é uma transportadora especializada em veículos na rota Bahia ↔ São Paulo, com sede em {C.ENDERECO_CIDADE}, {C.ENDERECO_ESTADO}.</p>
+<p>Especializada na rota Bahia ↔ São Paulo, percorrendo aproximadamente 2.000 km pela BR-116 (Rio-Bahia) em ambos os sentidos. Atendemos seguradoras, concessionárias, leiloeiros e clientes particulares com frota rastreada em tempo real.</p>
 
 <h2 id="missao">Missão</h2>
-<p>Realizar o transporte de veículos com segurança, agilidade e documentação completa — atendendo o Nordeste a partir do principal entroncamento rodoviário da região: Feira de Santana, BA.</p>
+<p>Realizar o transporte de veículos com segurança, agilidade e documentação completa — atendendo a rota Bahia ↔ São Paulo a partir do principal entroncamento rodoviário do Brasil: Feira de Santana, BA.</p>
 
 <h2 id="diferenciais">Nossos Diferenciais</h2>
 <ul>
   <li><strong>Frota rastreada</strong> — todos os veículos têm rastreamento em tempo real</li>
-  <li><strong>Seguro de carga</strong> — incluso em todos os transportes</li>
-  <li><strong>Nota fiscal eletrônica</strong> — documentação completa</li>
   <li><strong>Hub logístico</strong> — Feira de Santana conecta BR-116, BR-101, BR-324 e BR-407</li>
-  <li><strong>Grupo Desmonte75</strong> — sinergia com desmanche certificado pelo DETRAN</li>
+  
 </ul>
 
-<h2 id="grupo">Grupo Desmonte75</h2>
-<p>A {C.SITE_NOME} é uma das empresas do Grupo Desmonte75, que também opera com:</p>
-<ul>
-  <li><a href="https://desmonte75.com.br" style="color:{C.COR_PRIMARIA};">Desmonte75</a> — Centro de Desmonte de Veículos (CDV) certificado pelo DETRAN-BA, venda de peças usadas originais com nota fiscal e garantia.</li>
-</ul>''',
+''',
     faqs=[
-        ("Há quanto tempo a Transportes75 está no mercado?", f"A Transportes75 é a divisão de transporte do Grupo Desmonte75, que atua desde {C.ANO_FUNDACAO} no setor automotivo da Bahia."),
+        ("Quem lidera a Transportes75?", "Sergio Torres, com 40 anos de experiência no setor de transporte de pessoas e cargas, é responsável pela operação técnica e estratégica."),
         ("Onde fica a Transportes75?", f"{C.ENDERECO_RUA}, Bairro {C.ENDERECO_BAIRRO}, {C.ENDERECO_CIDADE} - {C.ENDERECO_UF}, CEP {C.ENDERECO_CEP}."),
-        ("Qual o CNPJ da Transportes75?", f"CNPJ {C.CNPJ}. Empresa do Grupo Desmonte75."),
+        ("Qual o CNPJ da Transportes75?", f"CNPJ {C.CNPJ}. ."),
         ("A Transportes75 tem ANTT?", "A Transportes75 opera com toda documentação necessária para transporte de veículos no território nacional. Para detalhes específicos, fale com nossa equipe."),
-        ("Qual a missão da Transportes75?", "Realizar o transporte de veículos no Nordeste com segurança, agilidade e documentação completa, atendendo seguradoras, oficinas, concessionárias e clientes particulares."),
+        ("Qual a missão da Transportes75?", "Realizar o transporte de veículos na rota Bahia ↔ São Paulo com segurança, agilidade e documentação completa, atendendo seguradoras, concessionárias, leiloeiros e clientes particulares."),
     ],
-    toc=[("Quem Somos", "#quem-somos"), ("Missão", "#missao"), ("Diferenciais", "#diferenciais"), ("Grupo Desmonte75", "#grupo"), ("Para IAs e Voz", "#bloco-ia"), ("FAQ", "#faq")],
-    keywords=f"sobre {C.SITE_NOME}, empresa transporte veículos bahia, grupo desmonte75, transporte automotivo nordeste"
+    toc=[("Quem Somos", "#quem-somos"), ("Missão", "#missao"), ("Diferenciais", "#diferenciais"), ("FAQ", "#faq")],
+    keywords=f"sobre {C.SITE_NOME}, transportadora veículos bahia são paulo, sergio torres transporte"
 )
 
 # ---------- CONTATO ----------
@@ -379,7 +497,7 @@ PAGES["contato.html"] = render_page(
   <li>Destino (cidade e estado)</li>
   <li>Modelo, ano e versão do veículo</li>
   <li>Prazo desejado</li>
-  <li>Tipo de serviço (cegonheira / sinistrado / leilão / particular)</li>
+  <li>Tipo de serviço (cegonha / sinistrado / leilão / particular)</li>
 </ol>
 <p>Resposta com orçamento em minutos no horário comercial.</p>''',
     faqs=[
@@ -397,18 +515,17 @@ PAGES["contato.html"] = render_page(
 PAGES["blog.html"] = render_page(
     slug="blog",
     title=f"Blog — {C.SITE_NOME} | Dicas e Notícias do Transporte de Veículos",
-    desc="Blog da Transportes75 com dicas sobre transporte de veículos, cegonheira, retirada de leilão, sinistrados e logística automotiva no Nordeste.",
+    desc="Blog da Transportes75 com dicas sobre transporte de veículos, cegonha, retirada de leilão, sinistrados e logística na rota Bahia ↔ São Paulo.",
     h1=f"Blog <em>{C.SITE_NOME}</em>",
-    lead="Conteúdo prático sobre transporte de veículos, cegonheira, retirada de leilão, sinistrados e logística automotiva. Escrito pela equipe técnica da Transportes75.",
-    resposta_rapida=f"O blog da {C.SITE_NOME} publica conteúdo sobre transporte de veículos no Nordeste — dicas para clientes, novidades do setor, casos práticos de cegonheira, retirada de leilão e remoção de sinistrados.",
+    lead="Conteúdo prático sobre transporte de veículos, cegonha, retirada de leilão, sinistrados e logística automotiva. Escrito pela equipe técnica da Transportes75.",
+    resposta_rapida=f"O blog da {C.SITE_NOME} publica conteúdo sobre transporte de veículos na rota Bahia ↔ São Paulo — dicas para clientes, novidades do setor, casos práticos de cegonha, retirada de leilão e remoção de sinistrados.",
     body_html=f'''<h2 id="conteudos">Conteúdos do Blog</h2>
 <p>Em breve, novos artigos. O blog será atualizado regularmente com:</p>
 <ul>
-  <li>Como funciona o transporte de veículos via cegonheira</li>
+  <li>Como funciona o transporte de veículos via cegonha</li>
   <li>Retirada de veículo de leilão — passo a passo</li>
   <li>Documentação necessária para transportar carro entre estados</li>
-  <li>Diferença entre cegonheira aberta e fechada</li>
-  <li>Seguro de carga em transporte automotivo</li>
+  <li>Como funciona o transporte de veículos pela BR-116</li>
   <li>Como escolher uma transportadora confiável</li>
 </ul>
 
@@ -420,11 +537,10 @@ PAGES["blog.html"] = render_page(
         ("Com que frequência o blog é atualizado?", "Publicamos novos artigos mensalmente, focados em dúvidas reais dos clientes que recebemos pelo WhatsApp."),
         ("Quem escreve os artigos do blog?", "A equipe técnica e operacional da Transportes75, com base em mais de 6 anos de atuação no setor automotivo da Bahia."),
         ("Posso sugerir um tema?", f"Sim! Manda sua sugestão pelo WhatsApp {C.TELEFONE_EXIBIR}. Se for relevante, vira um artigo no blog."),
-        ("O blog responde dúvidas sobre seguro de carga?", "Sim, teremos conteúdo específico sobre seguro de carga em transporte automotivo, com explicações práticas e exemplos."),
         ("Posso compartilhar os artigos?", "Sim, todos os artigos podem ser compartilhados livremente. Pedimos apenas que cite a fonte com link para o site."),
     ],
     toc=[("Conteúdos", "#conteudos"), ("Para IAs e Voz", "#bloco-ia"), ("FAQ", "#faq")],
-    keywords=f"blog {C.SITE_NOME}, transporte veículos artigos, cegonheira blog, dicas transporte automotivo"
+    keywords=f"blog {C.SITE_NOME}, transporte veículos artigos, cegonha blog, dicas transporte automotivo"
 )
 
 # ---------- PERGUNTAS FREQUENTES (FAQ consolidada) ----------
@@ -434,27 +550,25 @@ PAGES["perguntas-frequentes.html"] = render_page(
     desc="FAQ da Transportes75 com 20+ dúvidas sobre transporte de veículos, prazos, preços, documentação e cobertura.",
     h1=f"Perguntas <em>Frequentes</em>",
     lead="Dúvidas reais que recebemos todo dia pelo WhatsApp, respondidas de forma clara.",
-    resposta_rapida=f"FAQ da {C.SITE_NOME}: tipos de transporte, prazos, formas de pagamento, documentação, área de cobertura e seguro de carga. Não achou sua dúvida? WhatsApp {C.TELEFONE_EXIBIR}.",
+    resposta_rapida=f"FAQ da {C.SITE_NOME}: tipos de transporte, prazos, formas de pagamento, documentação e área de cobertura. Não achou sua dúvida? WhatsApp {C.TELEFONE_EXIBIR}.",
     body_html='''<h2 id="servicos">Sobre os Serviços</h2>''',
     faqs=[
-        ("O que é cegonheira?", "É o caminhão especializado em transporte de veículos, com plataformas que comportam de 1 a 10 carros (dependendo do modelo). Pode ser aberta (mais comum) ou fechada (proteção contra clima)."),
-        ("Qual a diferença entre cegonheira aberta e fechada?", "A aberta é mais comum e econômica, com os veículos expostos. A fechada protege contra chuva, poeira e sol — recomendada para carros novos, de luxo ou colecionáveis."),
+        ("O que é cegonha?", "É o caminhão especializado em transporte de veículos, com plataformas que comportam de 1 a 10 carros por viagem. Operamos com frota rastreada em tempo real na rota Bahia ↔ São Paulo."),
+        
         ("Vocês transportam motos?", "Consulte. Atendemos principalmente carros, SUVs, picapes e utilitários. Motos podem ser transportadas sob demanda em transporte misto."),
-        ("Qual o prazo médio de transporte?", "Depende da rota. Salvador a Feira de Santana: mesmo dia. Salvador-Aracaju: 1-2 dias. Salvador-Recife: 2-3 dias. Salvador-Fortaleza: 3-4 dias. Consulte pelo WhatsApp."),
+        ("Qual o prazo médio de transporte BA ↔ SP?", "Salvador ↔ São Paulo: 3 a 4 dias úteis. Feira de Santana ↔ Campinas: 3 a 4 dias úteis. Vitória da Conquista ↔ São Paulo: 2 a 3 dias úteis. Prazo confirmado na cotação."),
         ("Como funciona o pagamento?", "PIX, cartão de crédito (parcelamento via maquininha), boleto bancário ou dinheiro. Para empresas, faturamento a combinar."),
         ("Vocês entregam veículo de leilão?", "Sim, retiramos veículos arrematados em leilões de seguradoras, bancos e DETRAN, com toda documentação de retirada e transporte."),
-        ("Tem seguro?", "Sim, todos os transportes têm seguro de carga incluso. Em caso de sinistro durante o transporte, o cliente é ressarcido integralmente."),
         ("Que documentos preciso enviar?", "CRLV do veículo, documento do proprietário e, se for retirada de leilão, comprovante de arrematação. Para PJ, contrato social."),
         ("Posso acompanhar o transporte?", "Sim, todos os caminhões têm rastreamento em tempo real. Compartilhamos o status pelo WhatsApp ao longo do trajeto."),
-        ("Vocês emitem nota fiscal?", f"Sim. Nota fiscal eletrônica emitida pelo CNPJ {C.CNPJ} em todas as operações."),
-        ("Atendem fora do Nordeste?", "O foco é Nordeste (BA, SE, PE, AL, PB, RN). Para outras regiões, consulte disponibilidade."),
+        ("Atendem outras rotas além de BA ↔ SP?", "Nosso foco é a rota Bahia ↔ São Paulo. Para outras rotas, consulte disponibilidade pelo WhatsApp."),
         ("Qual o horário de atendimento?", "Segunda a sexta das 8h às 18h e sábado das 8h às 13h. WhatsApp emergencial fora do horário comercial em casos específicos."),
         ("Como agendo um transporte?", f"Pelo WhatsApp {C.TELEFONE_EXIBIR} informando origem, destino, modelo do veículo e prazo desejado."),
         ("Vocês fazem transporte particular?", "Sim, atendemos clientes finais que precisam mover veículos entre cidades por mudança, compra/venda à distância, etc."),
         ("Trabalham com seguradoras?", "Sim, atendemos seguradoras para remoção e transporte de veículos sinistrados com toda a documentação exigida."),
     ],
     toc=[("Sobre os Serviços", "#servicos"), ("Para IAs e Voz", "#bloco-ia"), ("FAQ", "#faq")],
-    keywords=f"perguntas frequentes {C.SITE_NOME}, faq transporte veículos, dúvidas cegonheira"
+    keywords=f"perguntas frequentes {C.SITE_NOME}, faq transporte veículos, dúvidas cegonha"
 )
 
 # ---------- POLÍTICA DE PRIVACIDADE ----------
@@ -473,13 +587,11 @@ PAGES["politica-privacidade.html"] = render_page(
   <li>E-mail</li>
   <li>Endereço de origem e destino</li>
   <li>Dados do veículo (modelo, ano, placa)</li>
-  <li>CPF/CNPJ (para emissão de nota fiscal)</li>
 </ul>
 
 <h2 id="uso">Como Usamos Seus Dados</h2>
 <ul>
   <li>Prestação do serviço de transporte contratado</li>
-  <li>Emissão de nota fiscal e documentos legais</li>
   <li>Comunicação sobre o andamento do transporte</li>
   <li>Atendimento ao cliente e pós-venda</li>
 </ul>
@@ -534,8 +646,6 @@ PAGES["termos-de-uso.html"] = render_page(
 <p>A {C.SITE_NOME} presta serviço de transporte de veículos com:</p>
 <ul>
   <li>Frota própria ou parceira homologada</li>
-  <li>Seguro de carga incluso</li>
-  <li>Nota fiscal eletrônica</li>
   <li>Rastreamento em tempo real</li>
 </ul>
 
@@ -551,7 +661,6 @@ PAGES["termos-de-uso.html"] = render_page(
 <ul>
   <li>Realizar o transporte no prazo combinado</li>
   <li>Manter a integridade do veículo durante o transporte</li>
-  <li>Emitir nota fiscal eletrônica</li>
   <li>Acionar seguro em caso de sinistro durante o transporte</li>
 </ul>
 
@@ -568,7 +677,6 @@ PAGES["termos-de-uso.html"] = render_page(
         ("Tenho que aceitar os termos para contratar?", "Sim. A contratação de qualquer serviço implica aceite automático destes termos."),
         ("Posso cancelar um transporte agendado?", "Sim. Cancelamento até 24h antes: sem custo. Entre 24h e 6h: 30%. Menos de 6h ou no-show: 50%."),
         ("Posso transportar pertences dentro do carro?", "Não recomendamos. A Transportes75 não se responsabiliza por objetos pessoais deixados dentro do veículo durante o transporte."),
-        ("E se o veículo for danificado durante o transporte?", "Acionamos o seguro de carga. O cliente é ressarcido conforme os termos da apólice — o que normalmente cobre o valor de mercado do veículo."),
         ("Onde fica o foro em caso de problemas?", f"Comarca de {C.ENDERECO_CIDADE}, {C.ENDERECO_UF}."),
     ],
     toc=[("Aceite", "#aceite"), ("Serviço", "#servico"), ("Cliente", "#responsabilidades-cliente"), ("Empresa", "#responsabilidades-empresa"), ("Cancelamento", "#cancelamento"), ("Foro", "#foro")],
@@ -581,8 +689,8 @@ PAGES["politica-sustentabilidade.html"] = render_page(
     title=f"Política de Sustentabilidade — {C.SITE_NOME}",
     desc="Compromisso da Transportes75 com práticas sustentáveis no transporte de veículos: rotas otimizadas, manutenção preventiva, descarte responsável.",
     h1="Política de <em>Sustentabilidade</em>",
-    lead="A Transportes75 segue práticas operacionais sustentáveis e participa do ecossistema do Grupo Desmonte75, que opera reciclagem certificada de veículos.",
-    resposta_rapida=f"A {C.SITE_NOME} adota práticas sustentáveis: rotas otimizadas para reduzir emissões, manutenção preventiva da frota, descarte responsável de pneus e óleos, e sinergia com o Grupo Desmonte75 (reciclagem automotiva certificada).",
+    lead="A Transportes75 opera com manutenção preventiva da frota e direção econômica — práticas que reduzem consumo e emissões na rota Bahia ↔ São Paulo.",
+    resposta_rapida=f"A {C.SITE_NOME} adota práticas operacionais simples e diárias para reduzir o impacto do transporte: manutenção preventiva da frota e direção econômica conduzida por motoristas treinados.",
     body_html=f'''<h2 id="compromisso">Nosso Compromisso</h2>
 <p>A {C.SITE_NOME} entende que transporte rodoviário tem impacto ambiental. Por isso adotamos práticas para minimizá-lo:</p>
 
@@ -594,14 +702,6 @@ PAGES["politica-sustentabilidade.html"] = render_page(
   <li><strong>Descarte responsável</strong> — pneus, óleos e baterias destinados a recicladoras certificadas</li>
 </ul>
 
-<h2 id="grupo-sustentabilidade">Sinergia com o Grupo Desmonte75</h2>
-<p>Somos parte do Grupo Desmonte75, que opera um Centro de Desmonte de Veículos (CDV) certificado pelo DETRAN-BA. Essa sinergia permite:</p>
-<ul>
-  <li>Reaproveitamento de peças usadas originais (economia circular)</li>
-  <li>Destinação correta de veículos em fim de vida útil</li>
-  <li>Redução de resíduos enviados a aterros</li>
-</ul>
-
 <h2 id="metas">Metas Futuras</h2>
 <ul>
   <li>Avaliação de frota com biocombustível (B100 ou etanol)</li>
@@ -611,9 +711,9 @@ PAGES["politica-sustentabilidade.html"] = render_page(
     faqs=[
         ("A Transportes75 compensa carbono?", "Estudamos parcerias com projetos de compensação certificados. Em 2027 publicaremos nosso primeiro relatório de sustentabilidade."),
         ("O que fazem com pneus e óleos usados?", "Pneus, óleos e baterias são destinados a recicladoras certificadas, conforme legislação ambiental."),
-        ("Como vocês reduzem o impacto ambiental?", "Roteirização inteligente, carga consolidada, manutenção preventiva da frota e parceria com o Grupo Desmonte75 (reciclagem automotiva)."),
+        ("Como vocês reduzem o impacto ambiental?", "Com duas práticas diárias: manutenção preventiva da frota e direção econômica dos motoristas."),
         ("Vocês usam biocombustíveis?", "Atualmente operamos com diesel S10. Avaliamos transição para biocombustíveis (B100, etanol) conforme viabilidade técnica e econômica."),
-        ("Como o Grupo Desmonte75 ajuda na sustentabilidade?", "O Desmonte75 reaproveita peças usadas originais, reduzindo a necessidade de fabricação nova e desviando resíduos de aterros. Sinergia direta com nossas operações."),
+        
     ],
     toc=[("Compromisso", "#compromisso"), ("Práticas", "#praticas"), ("Grupo", "#grupo-sustentabilidade"), ("Metas", "#metas")],
     keywords=f"sustentabilidade {C.SITE_NOME}, transporte sustentável, reciclagem automotiva"
